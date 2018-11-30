@@ -304,7 +304,7 @@ echo '<span class="badge"> ' . " $v_start - $v_end / $t_bug_count " . ' </span>'
 	<div class="widget-body">
 		<div class="widget-main no-padding">
 			<div class="table-responsive">
-				<table class="table table-bordered table-condensed table-striped table-hover">
+				<table class="table table-bordered table-condensed table-hover">
 <tbody>
 <?php
 # -- Loop over bug rows and create $v_* variables --
@@ -336,7 +336,7 @@ for( $i = 0;$i < $t_count; $i++ ) {
 	}
 	?>
 
-<tr class="my-buglist-bug <?php echo $t_bug_class?>">
+<tr class="my-buglist-bug <?php echo $t_bug_class?> status-<?php echo $t_bug->status;?>-color" style="color:black;">
 	<?php
 	# -- Bug ID and details link + Pencil shortcut --?>
 	<td class="nowrap width-13 my-buglist-id">
